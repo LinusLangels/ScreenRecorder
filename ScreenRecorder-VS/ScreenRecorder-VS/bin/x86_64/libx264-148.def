@@ -1,0 +1,473 @@
+EXPORTS
+    _sched_affinitycpuand @1
+    _sched_affinitycpuclr @2
+    _sched_affinitycpucount @3
+    _sched_affinitycpuequal @4
+    _sched_affinitycpuisset @5
+    _sched_affinitycpuor @6
+    _sched_affinitycpuset @7
+    _sched_affinitycpuxor @8
+    _sched_affinitycpuzero @9
+    pthreadCancelableTimedWait @10
+    pthreadCancelableWait @11
+    pthread_attr_destroy @12
+    pthread_attr_getaffinity_np @13
+    pthread_attr_getdetachstate @14
+    pthread_attr_getinheritsched @15
+    pthread_attr_getname_np @16
+    pthread_attr_getschedparam @17
+    pthread_attr_getschedpolicy @18
+    pthread_attr_getscope @19
+    pthread_attr_getstackaddr @20
+    pthread_attr_getstacksize @21
+    pthread_attr_init @22
+    pthread_attr_setaffinity_np @23
+    pthread_attr_setdetachstate @24
+    pthread_attr_setinheritsched @25
+    pthread_attr_setname_np @26
+    pthread_attr_setschedparam @27
+    pthread_attr_setschedpolicy @28
+    pthread_attr_setscope @29
+    pthread_attr_setstackaddr @30
+    pthread_attr_setstacksize @31
+    pthread_barrier_destroy @32
+    pthread_barrier_init @33
+    pthread_barrier_wait @34
+    pthread_barrierattr_destroy @35
+    pthread_barrierattr_getpshared @36
+    pthread_barrierattr_init @37
+    pthread_barrierattr_setpshared @38
+    pthread_cancel @39
+    pthread_cond_broadcast @40
+    pthread_cond_destroy @41
+    pthread_cond_init @42
+    pthread_cond_signal @43
+    pthread_cond_timedwait @44
+    pthread_cond_wait @45
+    pthread_condattr_destroy @46
+    pthread_condattr_getpshared @47
+    pthread_condattr_init @48
+    pthread_condattr_setpshared @49
+    pthread_create @50
+    pthread_delay_np @51
+    pthread_detach @52
+    pthread_equal @53
+    pthread_exit @54
+    pthread_getaffinity_np @55
+    pthread_getconcurrency @56
+    pthread_getname_np @57
+    pthread_getschedparam @58
+    pthread_getspecific @59
+    pthread_getunique_np @60
+    pthread_getw32threadhandle_np @61
+    pthread_getw32threadid_np @62
+    pthread_join @63
+    pthread_key_create @64
+    pthread_key_delete @65
+    pthread_kill @66
+    pthread_mutex_consistent @67
+    pthread_mutex_destroy @68
+    pthread_mutex_init @69
+    pthread_mutex_lock @70
+    pthread_mutex_timedlock @71
+    pthread_mutex_trylock @72
+    pthread_mutex_unlock @73
+    pthread_mutexattr_destroy @74
+    pthread_mutexattr_getkind_np @75
+    pthread_mutexattr_getpshared @76
+    pthread_mutexattr_getrobust @77
+    pthread_mutexattr_gettype @78
+    pthread_mutexattr_init @79
+    pthread_mutexattr_setkind_np @80
+    pthread_mutexattr_setpshared @81
+    pthread_mutexattr_setrobust @82
+    pthread_mutexattr_settype @83
+    pthread_num_processors_np @84
+    pthread_once @85
+    pthread_rwlock_destroy @86
+    pthread_rwlock_init @87
+    pthread_rwlock_rdlock @88
+    pthread_rwlock_timedrdlock @89
+    pthread_rwlock_timedwrlock @90
+    pthread_rwlock_tryrdlock @91
+    pthread_rwlock_trywrlock @92
+    pthread_rwlock_unlock @93
+    pthread_rwlock_wrlock @94
+    pthread_rwlockattr_destroy @95
+    pthread_rwlockattr_getpshared @96
+    pthread_rwlockattr_init @97
+    pthread_rwlockattr_setpshared @98
+    pthread_self @99
+    pthread_setaffinity_np @100
+    pthread_setcancelstate @101
+    pthread_setcanceltype @102
+    pthread_setconcurrency @103
+    pthread_setname_np @104
+    pthread_setschedparam @105
+    pthread_setspecific @106
+    pthread_spin_destroy @107
+    pthread_spin_init @108
+    pthread_spin_lock @109
+    pthread_spin_trylock @110
+    pthread_spin_unlock @111
+    pthread_testcancel @112
+    pthread_timechange_handler_np @113
+    pthread_timedjoin_np @114
+    pthread_tryjoin_np @115
+    pthread_win32_process_attach_np @116
+    pthread_win32_process_detach_np @117
+    pthread_win32_test_features_np @118
+    pthread_win32_thread_attach_np @119
+    pthread_win32_thread_detach_np @120
+    ptw32_Registercancellation @121
+    ptw32_autostatic_anchor @122
+    ptw32_callUserDestroyRoutines @123
+    ptw32_cleanupKey @124 DATA
+    ptw32_concurrency @125 DATA
+    ptw32_cond_check_need_init @126
+    ptw32_cond_list_head @127 DATA
+    ptw32_cond_list_lock @128 DATA
+    ptw32_cond_list_tail @129 DATA
+    ptw32_cond_test_init_lock @130 DATA
+    ptw32_features @131 DATA
+    ptw32_get_exception_services_code @132
+    ptw32_getprocessors @133
+    ptw32_is_attr @134
+    ptw32_mcs_flag_set @135
+    ptw32_mcs_flag_wait @136
+    ptw32_mcs_lock_acquire @137
+    ptw32_mcs_lock_release @138
+    ptw32_mcs_lock_try_acquire @139
+    ptw32_mcs_node_transfer @140
+    ptw32_mutex_check_need_init @141
+    ptw32_mutex_test_init_lock @142 DATA
+    ptw32_new @143
+    ptw32_pop_cleanup @144
+    ptw32_pop_cleanup_all @145
+    ptw32_processInitialize @146
+    ptw32_processInitialized @147 DATA
+    ptw32_processTerminate @148
+    ptw32_push_cleanup @149
+    ptw32_register_cancellation @150 DATA
+    ptw32_relmillisecs @151
+    ptw32_robust_mutex_add @152
+    ptw32_robust_mutex_inherit @153
+    ptw32_robust_mutex_remove @154
+    ptw32_rwlock_cancelwrwait @155
+    ptw32_rwlock_check_need_init @156
+    ptw32_rwlock_test_init_lock @157 DATA
+    ptw32_selfThreadKey @158 DATA
+    ptw32_semwait @159
+    ptw32_setthreadpriority @160
+    ptw32_spinlock_check_need_init @161
+    ptw32_spinlock_test_init_lock @162 DATA
+    ptw32_threadDestroy @163
+    ptw32_threadReuseBottom @164 DATA
+    ptw32_threadReusePop @165
+    ptw32_threadReusePush @166
+    ptw32_threadReuseTop @167 DATA
+    ptw32_threadSeqNumber @168 DATA
+    ptw32_threadStart @169
+    ptw32_thread_reuse_lock @170 DATA
+    ptw32_throw @171
+    ptw32_tkAssocCreate @172
+    ptw32_tkAssocDestroy @173
+    sched_get_priority_max @174
+    sched_get_priority_min @175
+    sched_getaffinity @176
+    sched_getscheduler @177
+    sched_setaffinity @178
+    sched_setscheduler @179
+    sched_yield @180
+    sem_close @181
+    sem_destroy @182
+    sem_getvalue @183
+    sem_init @184
+    sem_open @185
+    sem_post @186
+    sem_post_multiple @187
+    sem_timedwait @188
+    sem_trywait @189
+    sem_unlink @190
+    sem_wait @191
+    x264_adaptive_quant_frame @192
+    x264_analyse_free_costs @193
+    x264_analyse_init_costs @194
+    x264_analyse_weight_frame @195
+    x264_bit_depth @196 DATA
+    x264_bitstream_init @197
+    x264_cabac_block_residual_8x8_rd_c @198
+    x264_cabac_block_residual_c @199
+    x264_cabac_block_residual_rd_c @200
+    x264_cabac_context_init @201
+    x264_cabac_contexts @202 DATA
+    x264_cabac_encode_bypass_c @203
+    x264_cabac_encode_decision_c @204
+    x264_cabac_encode_flush @205
+    x264_cabac_encode_init @206
+    x264_cabac_encode_init_core @207
+    x264_cabac_encode_terminal_c @208
+    x264_cabac_encode_ue_bypass @209
+    x264_cabac_entropy @210 DATA
+    x264_cabac_init @211
+    x264_cabac_mb_skip @212
+    x264_cabac_range_lps @213 DATA
+    x264_cabac_renorm_shift @214 DATA
+    x264_cabac_size_unary @215 DATA
+    x264_cabac_transition @216 DATA
+    x264_cabac_transition_unary @217 DATA
+    x264_cache_mv_func_table @218 DATA
+    x264_cache_mvd_func_table @219 DATA
+    x264_cache_ref_func_table @220 DATA
+    x264_cavlc_init @221
+    x264_chroma_format @222 DATA
+    x264_coeff0_token @223 DATA
+    x264_coeff_abs_level_m1_offset @224 DATA
+    x264_coeff_flag_offset_chroma_422_dc @225 DATA
+    x264_coeff_token @226 DATA
+    x264_copy_column8 @227
+    x264_count_cat_m1 @228 DATA
+    x264_cpu_detect @229
+    x264_cpu_names @230 DATA
+    x264_cpu_num_processors @231
+    x264_cqm_delete @232
+    x264_cqm_init @233
+    x264_cqm_parse_file @234
+    x264_dct4_weight2_tab @235 DATA
+    x264_dct4_weight_tab @236 DATA
+    x264_dct8_weight2_tab @237 DATA
+    x264_dct8_weight_tab @238 DATA
+    x264_dct_init @239
+    x264_deblock_init @240
+    x264_decimate_table4 @241 DATA
+    x264_decimate_table8 @242 DATA
+    x264_encoder_close @243
+    x264_encoder_delayed_frames @244
+    x264_encoder_encode @245
+    x264_encoder_headers @246
+    x264_encoder_intra_refresh @247
+    x264_encoder_invalidate_reference @248
+    x264_encoder_maximum_delayed_frames @249
+    x264_encoder_open_148 @250
+    x264_encoder_parameters @251
+    x264_encoder_reconfig @252
+    x264_encoder_reconfig_apply @253
+    x264_exp2_lut @254 DATA
+    x264_expand_border_mbpair @255
+    x264_field_vsad @256
+    x264_filler_write @257
+    x264_fopen @258
+    x264_frame_cond_broadcast @259
+    x264_frame_cond_wait @260
+    x264_frame_copy_picture @261
+    x264_frame_deblock_row @262
+    x264_frame_delete @263
+    x264_frame_delete_list @264
+    x264_frame_expand_border @265
+    x264_frame_expand_border_chroma @266
+    x264_frame_expand_border_filtered @267
+    x264_frame_expand_border_lowres @268
+    x264_frame_expand_border_mod16 @269
+    x264_frame_filter @270
+    x264_frame_init_lowres @271
+    x264_frame_new_slice @272
+    x264_frame_pop @273
+    x264_frame_pop_blank_unused @274
+    x264_frame_pop_unused @275
+    x264_frame_push @276
+    x264_frame_push_blank_unused @277
+    x264_frame_push_unused @278
+    x264_frame_shift @279
+    x264_frame_unshift @280
+    x264_free @281
+    x264_hpel_ref0 @282 DATA
+    x264_hpel_ref1 @283 DATA
+    x264_hrd_fullness @284
+    x264_intra_sa8d_x3_8x8 @285
+    x264_intra_sad_x3_16x16 @286
+    x264_intra_sad_x3_4x4 @287
+    x264_intra_sad_x3_8x16c @288
+    x264_intra_sad_x3_8x8 @289
+    x264_intra_sad_x3_8x8c @290
+    x264_intra_satd_x3_16x16 @291
+    x264_intra_satd_x3_4x4 @292
+    x264_intra_satd_x3_8x16c @293
+    x264_intra_satd_x3_8x8c @294
+    x264_is_pipe @295
+    x264_iter_kludge @296 DATA
+    x264_lambda2_tab @297 DATA
+    x264_lambda_tab @298 DATA
+    x264_last_coeff_flag_offset @299 DATA
+    x264_last_coeff_flag_offset_8x8 @300 DATA
+    x264_level_token @301 DATA
+    x264_levels @302 DATA
+    x264_log @303
+    x264_log2_lut @304 DATA
+    x264_log2_lz_lut @305 DATA
+    x264_lookahead_delete @306
+    x264_lookahead_get_frames @307
+    x264_lookahead_init @308
+    x264_lookahead_is_empty @309
+    x264_lookahead_put_frame @310
+    x264_macroblock_analyse @311
+    x264_macroblock_bipred_init @312
+    x264_macroblock_cache_allocate @313
+    x264_macroblock_cache_free @314
+    x264_macroblock_cache_load_interlaced @315
+    x264_macroblock_cache_load_progressive @316
+    x264_macroblock_cache_save @317
+    x264_macroblock_deblock @318
+    x264_macroblock_deblock_strength @319
+    x264_macroblock_encode @320
+    x264_macroblock_encode_p4x4 @321
+    x264_macroblock_encode_p8x8 @322
+    x264_macroblock_probe_skip @323
+    x264_macroblock_slice_init @324
+    x264_macroblock_thread_allocate @325
+    x264_macroblock_thread_free @326
+    x264_macroblock_thread_init @327
+    x264_macroblock_tree_read @328
+    x264_macroblock_write_cabac @329
+    x264_macroblock_write_cavlc @330
+    x264_malloc @331
+    x264_mb_encode_chroma @332
+    x264_mb_mc @333
+    x264_mb_mc_8x8 @334
+    x264_mb_predict_mv @335
+    x264_mb_predict_mv_16x16 @336
+    x264_mb_predict_mv_direct16x16 @337
+    x264_mb_predict_mv_pskip @338
+    x264_mb_predict_mv_ref16x16 @339
+    x264_mc_init @340
+    x264_mdate @341
+    x264_me_refine_bidir_rd @342
+    x264_me_refine_bidir_satd @343
+    x264_me_refine_qpel @344
+    x264_me_refine_qpel_rd @345
+    x264_me_refine_qpel_refdupe @346
+    x264_me_search_ref @347
+    x264_nal_encode @348
+    x264_noise_reduction_update @349
+    x264_opencl_close_library @350
+    x264_opencl_finalize_cost @351
+    x264_opencl_flush @352
+    x264_opencl_frame_delete @353
+    x264_opencl_load_library @354
+    x264_opencl_lookahead_delete @355
+    x264_opencl_lookahead_init @356
+    x264_opencl_lowres_init @357
+    x264_opencl_motionsearch @358
+    x264_opencl_precalculate_frame_cost @359
+    x264_opencl_slicetype_end @360
+    x264_opencl_slicetype_prep @361
+    x264_param2string @362
+    x264_param_apply_fastfirstpass @363
+    x264_param_apply_profile @364
+    x264_param_default @365
+    x264_param_default_preset @366
+    x264_param_parse @367
+    x264_picture_alloc @368
+    x264_picture_clean @369
+    x264_picture_init @370
+    x264_pixel_init @371
+    x264_pixel_ssd_nv12 @372
+    x264_pixel_ssd_wxh @373
+    x264_pixel_ssim_wxh @374
+    x264_plane_copy_c @375
+    x264_plane_copy_deinterleave_v210_c @376
+    x264_plane_copy_interleave_c @377
+    x264_plane_copy_swap_c @378
+    x264_pps_init @379
+    x264_pps_write @380
+    x264_predict_16x16_dc_c @381
+    x264_predict_16x16_h_c @382
+    x264_predict_16x16_init @383
+    x264_predict_16x16_p_c @384
+    x264_predict_16x16_v_c @385
+    x264_predict_4x4_dc_c @386
+    x264_predict_4x4_h_c @387
+    x264_predict_4x4_init @388
+    x264_predict_4x4_v_c @389
+    x264_predict_8x16c_dc_c @390
+    x264_predict_8x16c_h_c @391
+    x264_predict_8x16c_init @392
+    x264_predict_8x16c_p_c @393
+    x264_predict_8x16c_v_c @394
+    x264_predict_8x8_dc_c @395
+    x264_predict_8x8_h_c @396
+    x264_predict_8x8_init @397
+    x264_predict_8x8_v_c @398
+    x264_predict_8x8c_dc_c @399
+    x264_predict_8x8c_h_c @400
+    x264_predict_8x8c_init @401
+    x264_predict_8x8c_p_c @402
+    x264_predict_8x8c_v_c @403
+    x264_predict_lossless_16x16 @404
+    x264_predict_lossless_4x4 @405
+    x264_predict_lossless_8x8 @406
+    x264_predict_lossless_chroma @407
+    x264_prefetch_fenc @408
+    x264_quant_4x4_trellis @409
+    x264_quant_8x8_trellis @410
+    x264_quant_chroma_dc_trellis @411
+    x264_quant_init @412
+    x264_quant_luma_dc_trellis @413
+    x264_ratecontrol_delete @414
+    x264_ratecontrol_end @415
+    x264_ratecontrol_init_reconfigurable @416
+    x264_ratecontrol_mb @417
+    x264_ratecontrol_mb_qp @418
+    x264_ratecontrol_new @419
+    x264_ratecontrol_qp @420
+    x264_ratecontrol_set_weights @421
+    x264_ratecontrol_slice_type @422
+    x264_ratecontrol_start @423
+    x264_ratecontrol_summary @424
+    x264_rc_analyse_slice @425
+    x264_rd_cost_part @426
+    x264_rdo_init @427
+    x264_reduce_fraction @428
+    x264_reduce_fraction64 @429
+    x264_reference_build_list_optimal @430
+    x264_rename @431
+    x264_run_before @432 DATA
+    x264_sei_avcintra_umid_write @433
+    x264_sei_avcintra_vanc_write @434
+    x264_sei_buffering_period_write @435
+    x264_sei_dec_ref_pic_marking_write @436
+    x264_sei_frame_packing_write @437
+    x264_sei_pic_timing_write @438
+    x264_sei_recovery_point_write @439
+    x264_sei_version_write @440
+    x264_sei_write @441
+    x264_significant_coeff_flag_offset @442 DATA
+    x264_significant_coeff_flag_offset_8x8 @443 DATA
+    x264_slicetype_analyse @444
+    x264_slicetype_decide @445
+    x264_slurp_file @446
+    x264_sps_init @447
+    x264_sps_write @448
+    x264_stat @449
+    x264_sync_frame_list_delete @450
+    x264_sync_frame_list_init @451
+    x264_sync_frame_list_pop @452
+    x264_sync_frame_list_push @453
+    x264_thread_sync_ratecontrol @454
+    x264_threadpool_delete @455
+    x264_threadpool_init @456
+    x264_threadpool_run @457
+    x264_threadpool_wait @458
+    x264_threads_distribute_ratecontrol @459
+    x264_threads_merge_ratecontrol @460
+    x264_threadslice_cond_broadcast @461
+    x264_threadslice_cond_wait @462
+    x264_total_zeros @463 DATA
+    x264_total_zeros_2x2_dc @464 DATA
+    x264_total_zeros_2x4_dc @465 DATA
+    x264_validate_levels @466
+    x264_vfprintf @467
+    x264_weight_none @468 DATA
+    x264_weight_scale_plane @469
+    x264_weighted_reference_duplicate @470
+    x264_weights_analyse @471
+    x264_zigzag_init @472
